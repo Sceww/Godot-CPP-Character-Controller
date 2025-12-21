@@ -1,11 +1,11 @@
-#include "register_types.h"
+#include "../include/register_types.h"
 
 #include <gdextension_interface.h>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
-#include "example_class.h"
+#include "../include/example_class.h"
 
 using namespace godot;
 

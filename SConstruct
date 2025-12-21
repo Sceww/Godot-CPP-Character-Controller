@@ -5,8 +5,8 @@ import sys
 from methods import print_error
 
 
-libname = "EXTENSION-NAME"
-projectdir = "demo"
+libname = "CPP-CHARACTER-CONTROLLER"
+projectdir = "game"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
 
@@ -38,7 +38,7 @@ Run the following command to download godot-cpp:
 env = SConscript("godot-cpp/SConstruct", {"env": env, "customs": customs})
 
 env.Append(CPPPATH=["src/"])
-sources = Glob("src/*.cpp")
+sources = Glob("module/src/*.cpp")
 
 if env["target"] in ["editor", "template_debug"]:
     try:
