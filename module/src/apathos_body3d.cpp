@@ -1,4 +1,4 @@
-#include <apathos_body_3d.h>
+#include <apathos_body3d.h>
 
 void ApathosBody3D::_bind_methods() {
 	godot::ClassDB::bind_method(D_METHOD("move_and_step"), &ApathosBody3D::move_and_step);

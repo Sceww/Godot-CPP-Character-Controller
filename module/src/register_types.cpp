@@ -5,7 +5,7 @@
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
-#include <apathos_body_3d.h>
+#include <apathos_body3d.h>
 
 using namespace godot;
 
@@ -14,7 +14,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
-	GDREGISTER_CLASS(ExampleClass);
+	GDREGISTER_CLASS(ApathosBody3D);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
