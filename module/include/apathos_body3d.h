@@ -17,5 +17,7 @@ public:
 	~ApathosBody3D() override = default;
 
 	void move_and_step();
+	
+	void _process(double delta) override;
 	// void print_type(const Variant &p_variant) const;
 };

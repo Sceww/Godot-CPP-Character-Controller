@@ -1,10 +1,9 @@
-extends Node2D
+extends Node
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var s = ExampleClass.new() # OoOOOOoooOOOHHHH
-	s.print_type(Shape3D)
+	var asaa = ApathosBody3D
 	pass # Replace with function body.
 
 
