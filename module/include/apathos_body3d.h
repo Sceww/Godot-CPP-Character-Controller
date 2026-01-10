@@ -1,23 +1,23 @@
 #pragma once
 
-#include <godot_cpp/classes/collision_object3d.hpp>
-#include <godot_cpp/classes/wrapped.hpp>
-#include <godot_cpp/variant/variant.hpp>
+#include <godot_cpp/classes/character_body3d.hpp>
 
 using namespace godot;
 
-class ApathosBody3D : public CollisionObject3D {
-	GDCLASS(ApathosBody3D, CollisionObject3D)
+class ApathosBody3D : public CharacterBody3D {
+	GDCLASS(ApathosBody3D, CharacterBody3D)
+
+private:
+	int testProperty;
 
 protected:
 	static void _bind_methods();
 
 public:
-	ApathosBody3D() = default;
-	~ApathosBody3D() override = default;
+	ApathosBody3D();
+	~ApathosBody3D();
 
 	void move_and_step();
 	
 	void _process(double delta) override;
-	// void print_type(const Variant &p_variant) const;
 };

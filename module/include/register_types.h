@@ -4,6 +4,6 @@
 
 using namespace godot;
 
-void initialize_gdextension_types();
-void uninitialize_gdextension_types();
+void initialize_gdextension_types(ModuleInitializationLevel p_level);
+void uninitialize_gdextension_types(ModuleInitializationLevel p_level);
 
